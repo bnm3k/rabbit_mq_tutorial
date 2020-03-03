@@ -1,0 +1,11 @@
+{
+    "name": "rabbit_nodejs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "naga",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "amqplib": "^0.5.5"
+    }
+}
