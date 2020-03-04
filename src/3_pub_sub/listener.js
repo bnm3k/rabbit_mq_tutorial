@@ -1,10 +1,10 @@
 const amqp = require("amqplib/callback_api");
 
 amqp.connect("amqp://localhost", (err, connection) => {
-    if (err) throw error0;
+    if (err) throw err;
 
     connection.createChannel((err, channel) => {
-        if (err) throw error1;
+        if (err) throw err;
 
         const exchange = "logs";
         channel.assertExchange(exchange, "fanout", {
