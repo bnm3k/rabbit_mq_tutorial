@@ -1,9 +1,7 @@
 const amqp = require("amqplib/callback_api");
 
-//const keys = ["info", "warn", "error"];
 const key = process.argv[2] || "foo.bar";
 const msg = process.argv.slice(3).join(" ") || `some message: [${Date.now()}]`;
-//if (key.indexOf(key) < 0) throw new Error(`Invalid key ${key}`);
 
 amqp.connect("amqp://localhost", (err, connection) => {
     if (err) throw err;
